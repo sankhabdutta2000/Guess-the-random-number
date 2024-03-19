@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+
+    background-color: rgb(241, 236, 229);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+
+}
+
+.home a {
+    color: rgb(175, 103, 16);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.homeFocus {
+    color: palevioletred;
+    color: palevioletred;
+    animation: hover 0.2s forwards;
+}
+
+.navbar div:hover {
+    color: palevioletred;
+    transform: scale(1.2);
+    translate: 15px;
+    transition: 0.1s;
+}
+
+@keyframes hover {
+    100% {
+        transform: scale(2.5);
+        translate: 1.6rem;
+    }
+}
+
+#homePage {
+    padding: 5rem;
+
+}
+
+.homeContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    height: 70vh;
+    width: 90vw;
+
+}
+
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+#guessnumberImg {
+    margin-left: 2rem;
+    border-radius: 2rem;
+}
+
+.startGame {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color: antiquewhite;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-image: linear-gradient(to top left, blue, orange);
+    user-select: none;
+}
+
+.startGame:hover{
+    transform: scale(1.2);
+    translate: 15px;
+    transition: 0.1s;
+}
+
+.gameAreaPage {
+    width: 90vw auto;
+    height: 10vh;
+    padding: 4rem;
+    display: none;;
+}
+.overlay{
+    opacity: 0.5;
+
+}
+.confirmYes {
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background-color: blue;
+    color: white;
+    
+}
+
+.confirmNo {
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background-color: blue;
+    color: white;
+}
+
+.gameArea a {
+    color: rgb(175, 103, 16);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.gameArea:hover {
+    opacity: 0.7;
+}
+
+#gameAreaEntry {
+
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    height: 10vh;
+}
+
+#gamepageImg {
+    margin-top: 18rem;
+    width: 70vw;
+    border-radius: 2rem;
+}
+
+.exitBtn {
+    color: rgb(175, 103, 16);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+.confirmBox {
+    background-color: aliceblue;
+    width: 30rem;
+    height: 16rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.8),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.8),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.8),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 2;
+    margin: 7rem 25rem;
+}
+.hidden{
+    display: none;
+}
+.confirmOverlay{
+    opacity: 1;
+}
+.yesno {
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mode {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 0.4rem;
+}
+
+.mode:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+
+
+.guessText {
+    background-image: linear-gradient(to top left, rgb(0, 0, 221), rgb(90, 0, 90), rgb(3, 75, 3));
+    width: 90% auto;
+    height: 5rem;
+    color: white;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewExitBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70% auto;
+}
+
+.newGame {
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.numberLimit {
+    background: rgb(46, 56, 102);
+    background: radial-gradient(circle, rgba(46, 56, 102, 1) 0%, rgba(41, 7, 14, 1) 100%);
+    color: rgb(239, 243, 6);
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0.4rem;
+}
+
+.exit {
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.mainGameArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    width: 75%;
+    height: 22rem;
+    position: relative;
+    left: 10rem;
+
+}
+
+.numberChoice {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    height: 18rem;
+    border-radius: 2rem;
+}
+
+.computerChoice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.computerLogo img {
+    width: 7rem;
+}
+
+.computerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: black;
+    width: 5rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.humanChoice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.humanChoice img {
+    width: 7rem;
+}
+
+.messege {
+    background-color: rgb(70, 70, 70);
+    width: 30%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    border-radius: 2rem;
+}
+
+#guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 5rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.vs {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 7.5rem;
+}
+
+.check {
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    margin-top: 13rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.scoreBoard {
+    color: aliceblue;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 45%, rgba(0, 212, 255, 1) 100%);
+    display: grid;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 18%;
+    height: 12rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: rgb(71, 69, 69);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer p {
+    color: rgb(255, 255, 255);
+}
+
+.email a {
+    color: rgb(70, 211, 247);
+}
+
+.portfolioImg img {
+    width: 7rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.portfolioImg img:hover {
+    opacity: 0.7;
+}

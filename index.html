@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE NUMBER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.jpeg">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="home" homeFocus><a href="#homePage">home</a></div>
+        <div class="gameArea" gameAreaFocus><a href="#gameAreaEntry">game area</a></div>
+        <button class="mode">dark mode</button>
+    </nav>
+    <main id="homePage">
+        <div class="homeContent">
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sit. Doloribus, quod cum!
+                Eos sint, cumque quo iusto, exercitationem quam reiciendis cum, aperiam sit at tempora eaque deserunt
+                nostrum repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore, eius rem
+                consequuntur minus earum error accusantium culpa, placeat dolores numquam pariatur, odit ratione
+                voluptate commodi ad saepe. Tempore, officia.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, sit. Doloribus, quod cum! Eos sint, cumque quo iusto, exercitationem quam reiciendis cum,
+                aperiam sit at tempora eaque deserunt nostrum repudiandae. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quam dolore, eius rem consequuntur minus earum error accusantium culpa, placeat
+                dolores numquam pariatur, odit ratione voluptate commodi ad saepe. Tempore, officia.Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Ducimus, sit. Doloribus, quod cum! Eos sint, cumque quo iusto,
+                exercitationem quam reiciendis cum, aperiam sit at tempora eaque deserunt nostrum repudiandae. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Quam dolore, eius rem consequuntur minus earum error
+                accusantium culpa, placeat dolores numquam pariatur, odit ratione voluptate commodi ad saepe. Tempore,
+                officia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sit. Doloribus, quod cum! Eos
+                sint, cumque quo iusto, exercitationem quam reiciendis cum, aperiam sit at tempora eaque deserunt
+                nostrum repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore, eius rem
+                consequuntur minus earum error accusantium culpa, placeat dolores numquam pariatur, odit ratione
+                voluptate commodi ad saepe. Tempore, officia.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, sit. Doloribus, quod cum! Eos sint, cumque quo iusto, exercitationem quam reiciendis cum,
+                aperiam sit at tempora eaque deserunt nostrum repudiandae. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quam dolore, eius rem consequuntur minus earum error accusantium culpa, placeat
+                dolores numquam pariatur, odit ratione voluptate commodi ad saepe. Tempore, officia.
+            </p>
+            <img src="./image/guessnumber.jpg" alt="image loading error..." id="guessnumberImg">
+        </div>
+        <div id="gameAreaEntry">
+            <img src="./image/gamepage.jpg" alt="image loading error..." id="gamepageImg">
+            <span class="startGame">
+                click to start the game ✈
+            </span>
+        </div>
+    </main>
+    <div class="confirmBox hidden confirmOverlay">
+        <p class="confirmation">are you sure ?</p>
+        <div class="yesno">
+            <button class="confirmYes">exit</button>
+            <button class="confirmNo">cancel</button>
+        </div>
+    </div>
+    <main class="gameAreaPage overlay">
+        <div class="guessText">
+            guess the random number
+        </div>
+        <div class="NewExitBtn">
+            <button class="newGame">
+                new game
+            </button>
+            <p class="numberLimit">place the type box with positive whole number between 1 to 100</p>
+            <button class="exit">
+                exit
+            </button>
+        </div>
+        <div class="mainGameArea">
+            <section class="numberChoice">
+                <span class="computerChoice">
+                    <aside class="computerLogo"><img src="./image/computerlogo.png" alt=""></aside>
+                    <aside class="computerText showValue">
+                        🤔?
+                    </aside>
+                </span>
+                <p class="vs">vs</p>
+                <span class="humanChoice">
+                    <aside class="humanLogo">
+                        <img src="./image/humanlogo.png" alt="">
+                    </aside>
+                    <aside class="humanText">
+                        <label for="guess">
+                            <input type="number" placeholder="type..." id="guess">
+                        </label>
+                    </aside>
+                </span>
+                <button class="check">
+                    check
+                </button>
+            </section>
+            <section class="messege">
+                guess the number
+            </section>
+            <section class="scoreBoard">
+                <span class="score1">
+                    score : <span class="score"></span>
+                </span>
+                <span class="Score2">
+                    high score : <span class="highScore"></span>
+                </span>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>designed and developed by SANKHABRATA DUTTA</p>
+        <p>all rights reserved &copy; 2024</p>
+        <p class="email"><a href="mailto:sankhabratadutta18@gmail.com">sankhabratadutta18@gmail.com</a></p>
+        <span class="portfolioImg"><a href="https://sankhabdutta2000.github.io/" target="_main"><img
+                    src="./image/portfoliologo.png" alt="portfolio"></a></span>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+
+</html>
